@@ -26,7 +26,7 @@ li {
 }
 
 /* Initial appearance on load */
-#view-party-type, #view-donor-type, #view-source-type {
+#view-party-type, #view-donor-type, #view-source-type ,#view-amount-type{
     display: none;
 }
 
@@ -235,4 +235,22 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 .pure-button-active, .pure-button:active {
     color: rgb(0, 120, 231);
     color: #fff
+}
+
+.zoom{
+    -webkit-transition: font-size .8s; /* Safari */
+    transition: font-size .8s;
+}
+
+.zoom:hover{
+    font-size : 2em;
+}
+
+.zoomforh1{
+    -webkit-transition: font-size .8s; /* Safari */
+    transition: font-size .8s;
+}
+
+.zoomforh1:hover{
+    font-size : 2.5em;
 }
