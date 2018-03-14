@@ -106,7 +106,8 @@ function start() {
 		.attr("r", 0)
 		.style("fill", function(d) { return fill(d.party); })
 		.on("mouseover", mouseover)
-		.on("mouseout", mouseout).on("click", function(d) { window.open("http://www.google.com/search?q=" + d.donor);});
+		.on("click", function(d) { window.open("http://www.google.com/search?q=" + d.donor);})
+		.on("mouseout", mouseout);
 
 		force.gravity(0)
 			.friction(0.75)
